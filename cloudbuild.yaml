@@ -1,4 +1,16 @@
 steps:
+- name: 'gcr.io/cloud-builders/gsutil'
+  args:
+    - 'cp'
+    - 'gs://esapi-tokenroom/access_token.json'
+    - '/workspace/config/access_token.json'
+
+- name: 'gcr.io/cloud-builders/gsutil'
+  args:
+    - 'cp'
+    - 'gs://esapi-tokenroom/sheet_data.json'
+    - '/workspace/config/sheet_data.json'
+
 - name: 'node'
   entrypoint: 'npm'
   args: ['install']
