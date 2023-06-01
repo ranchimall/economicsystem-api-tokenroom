@@ -1,0 +1,22 @@
+{
+  "name": "economicsystem-tokenroom",
+  "version": "1.0.0",
+  "description": "Functions to fetch all the data required for the Token room Economic system",
+  "main": "fetch_finance_data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranchimall/economicsystem-tokenroom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranchimall/economicsystem-tokenroom/issues"
+  },
+  "homepage": "https://github.com/ranchimall/economicsystem-tokenroom#readme",
+  "dependencies": {
+    "googleapis": ""
+  }
+}
