@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/ranchimall/economicsystem-tokenroom#readme",
   "dependencies": {
-    "googleapis": ""
+    "googleapis": "",
+    "express": ""
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
