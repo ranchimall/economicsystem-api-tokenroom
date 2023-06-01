@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Clone the repository
-RUN git clone https://github.com/vivekteega/economicsystem-tokenroom .
+RUN git clone https://github.com/vivekteega/economicsystem-api-tokenroom .
 
 # Install dependencies
 RUN npm install
