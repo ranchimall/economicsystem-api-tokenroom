@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
-config/
+config/access_token.json
+config/sheet_data.json
 access_token.json
 sheet_data.json
