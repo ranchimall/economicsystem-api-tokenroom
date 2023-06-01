@@ -1,0 +1,8 @@
+steps:
+- name: 'Install node modules'
+  entrypoint: 'npm'
+  args: ['install']
+
+- name: 'Start running code'
+  entrypoint: 'npm'
+  args: ['start']
