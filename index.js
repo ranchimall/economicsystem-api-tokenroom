@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const economicSystemRoutes = require('./routes/economicSystem');
 
 // Middleware
+app.use(express.json())
 app.use(cors());
 
 // Routes
