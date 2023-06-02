@@ -21,4 +21,4 @@ ENV PORT=3000
 EXPOSE $PORT
 
 # Start the application
-ENTRYPOINT ["npm", "start"]
+#ENTRYPOINT ["npm", "start"]
