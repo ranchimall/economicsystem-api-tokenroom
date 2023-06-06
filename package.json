@@ -4,7 +4,7 @@
   "description": "Functions to fetch all the data required for the Token room Economic system",
   "main": "fetch_finance_data.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,10 @@
   },
   "homepage": "https://github.com/ranchimall/economicsystem-tokenroom#readme",
   "dependencies": {
-    "googleapis": "",
+    "@google-cloud/local-auth": "^2.1.1",
+    "cors": "",
     "express": "",
-    "cors":""
-  },
-  "scripts": {
-    "start": "node index.js"
+    "googleapis": "^105.0.0",
+    "axios":""
   }
 }
