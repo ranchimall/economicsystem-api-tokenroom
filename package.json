@@ -18,9 +18,10 @@
   "homepage": "https://github.com/ranchimall/economicsystem-tokenroom#readme",
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.1",
+    "axios": "",
     "cors": "",
     "express": "",
     "googleapis": "^105.0.0",
-    "axios":""
+    "xlsx": "^0.18.5"
   }
 }
