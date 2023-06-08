@@ -4,7 +4,9 @@
   "description": "Functions to fetch all the data required for the Token room Economic system",
   "main": "fetch_finance_data.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "sync": "nodemon test-sync-sheets.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "cors": "",
     "express": "",
     "googleapis": "^105.0.0",
+    "nodemon": "^2.0.22",
     "xlsx": "^0.18.5"
   }
 }

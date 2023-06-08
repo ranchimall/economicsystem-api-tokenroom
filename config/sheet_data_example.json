@@ -1,8 +1,12 @@
 {
-    "revenue_spreadsheetId": "asgaljknwrjkgnjawerHvri37_WJw-w9CMIKRmCVB8oHoibJrfH6ARbyU",
-    "TR_Expenses_range": "Expenses!A1:A7",
-    "TR_Consumption_range": "Revenue!B5:B22",
+    "revenue_spreadsheetId": "w-w9CMIKRmCVB8oHoibJrfH6ARbyU",
+    "TR_Expenses_sheet": "TR-Expenses",
+    "TR_Expenses_range": "E18:E70",
+    "TR_Consumption_sheet": "TR-Revenu",
+    "TR_Consumption_range": "C5:C22",
     "TR_Consumption_Valuation_Price_USD": 30,
-    "booking_spreadsheetId": "wrgwkrngkjtOBsihp12mCea-X0RzhYAzXOFd8UqPU",
-    "Booking_range": "TokenRoom!C6:C19"
+    "booking_spreadsheetId": "Cea-X0RzhYAzXOFd8UqPU",
+    "Booking_sheet": "Token-Room",
+    "Booking_range": "M6:M19",
+    "sync_folderId" : "foOzNf1Uh4lmisql"
 }
