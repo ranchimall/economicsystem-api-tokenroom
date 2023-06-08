@@ -14,7 +14,7 @@ router.get('/data', async (req, res) => {
     // Fetch consumption data
     await tokenRoom_EconomicSystem.fetchConsumptionData();
 
-    // Fetch consumption number
+    // // Fetch consumption number
     await tokenRoom_EconomicSystem.fetchConsumptionNumber();
 
     const productionCost = tokenRoom_EconomicSystem.productionCost;
@@ -22,7 +22,7 @@ router.get('/data', async (req, res) => {
     const consumptionCost = tokenRoom_EconomicSystem.consumptionCost;
     const productionValuation = tokenRoom_EconomicSystem.calculateProductionValuation();
     const consumptionValuation = tokenRoom_EconomicSystem.calculateConsumptionValuation();
-    const systemValuation = tokenRoom_EconomicSystem.calculateSystemValuation();
+    //const systemValuation = tokenRoom_EconomicSystem.calculateSystemValuation();
 
     res.json({
       productionCost,
@@ -30,7 +30,7 @@ router.get('/data', async (req, res) => {
       consumptionCost,
       productionValuation,
       consumptionValuation,
-      systemValuation,
+      //systemValuation,
     });
   } catch (error) {
     console.error('Error fetching data:', error);

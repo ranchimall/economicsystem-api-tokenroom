@@ -2,12 +2,13 @@ const { google } = require('googleapis');
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
+const sheet_data = require('./config/sheet_data.json');
 
 // Set the path to the Google service account key file
-const keyFilePath = path.join(__dirname, 'config' ,'*.json');
+const keyFilePath = path.join(__dirname, 'config' ,'access_token.json');
 
 // Set the ID of the Google Drive folder to sync
-const folderId = '';
+const folderId = sheet_data.sync_folderId;
 
 // Set the local directory path to sync the folder to
 const localDirectory = path.join(__dirname, 'data');
@@ -35,6 +36,7 @@ async function downloadFile(drive, fileId, filePath) {
       res.data
         .on('end', () => {
           console.log(`Downloaded file: ${filePath}`);
+          console.log(`${filePath} : filePath`)
           resolve();
         })
         .on('error', (err) => {
@@ -47,10 +49,10 @@ async function downloadFile(drive, fileId, filePath) {
 
 async function syncFolder(drive, folderId, localPath) {
     // List all files and subfolders in the folder
-    const res = await drive.files.list({
-      q: `'${folderId}' in parents and trashed = false`,
-      fields: 'files(id, name, mimeType)',
-    });
+     const res = await drive.files.list({
+       q: `'${folderId}' in parents and trashed = false`,
+       fields: 'files(id, name, mimeType)',
+     });
   
     const items = res.data.files;
   
@@ -92,7 +94,6 @@ async function runSync() {
 
     // Create a Google Drive API instance
     const drive = google.drive({ version: 'v3', auth: authClient });
-
     await syncFolder(drive, folderId, localDirectory); // Update with the path to your local folder
 
   } catch (error) {
